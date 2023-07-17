@@ -772,17 +772,17 @@ function draw() {
         //left knee is red, right knee is green, left foot is blue, right foot is black
         if (index == 9){
           //console.log("coordinate for left wrist is: "+x+" "+y);
-          circle(x, y, 10);
+          //circle(x, y, 10);
           image(img_sensor, x-5, y-5);
-          if (x>340 && x<410 && y>225 && y<305){
+          if (x>390 && x<450 && y>194 && y<242){
             correct++;
             image(img_sensorgood, x-20, y-20);
           }
         } else if(index==10){
           //console.log("coordinate for right wrist is: "+x+" "+y);
-          circle(x, y, 10);
+          //circle(x, y, 10);
           image(img_sensor, x-5, y-5);
-          if (x>220 && x<290 && y>260 && y<340){
+          if (x>187 && x<251 && y>195 && y<257){
             correct++;
             image(img_sensorgood, x-20, y-20);
           }
@@ -790,7 +790,7 @@ function draw() {
       //console.log("coordinate for left elbow is: "+x+" "+y);
         circle(x, y, 10);
         image(img_sensor, x-5,y-5);
-          if (x>340 && x<420 && y>165 && y<240){
+          if (x>360 && x<418 && y>145 && y<202){
             correct++;
             image(img_sensorgood, x-20,y-20);
           }
@@ -798,7 +798,7 @@ function draw() {
       //console.log("coordinate for right elbow is: "+x+" "+y);
         circle(x, y, 10);
         image(img_sensor, x-5,y-5);
-          if (x>240 && x<320 && y>135 && y<210){
+          if (x>232 && x<282 && y>148 && y<213){
             correct++;
             image(img_sensorgood, x-20,y-20);
           }
@@ -806,7 +806,7 @@ function draw() {
       //console.log("coordinate for left knee is: "+x+" "+y);
         circle(x, y, 10);
         leftkneesensor = image(img_sensor, x-5, y-5);
-          if (x>300 && x<370 && y>315 && y<390){
+          if (x>315 && x<377 && y>311 && y<365){
             correct++;
             leftkneesensor = image(img_sensorgood, x-20, y-20);
           }
@@ -814,7 +814,7 @@ function draw() {
       //console.log("coordinate for right knee is: "+x+" "+y);
         circle(x, y, 10);
         image(img_sensor, x-5,y-5);
-          if (x>270 && x<340 && y>315 && y<390){
+          if (x>265 && x<325 && y>308 && y<373){
             correct++;
             image(img_sensorgood, x-20,y-20);
           }
@@ -827,7 +827,7 @@ function draw() {
     }
     }
     
-    //2 - unicorn game
+    //2 - pose2
     else if (main_start && game2){
       index=0;
       correct = 0;
@@ -835,17 +835,16 @@ function draw() {
     for (let kp of poses[0].keypoints) {
       const { x, y, score } = kp;
       if (score > 0.8) {
-        console.log("Certainty level high enough"+index+" "+x+" "+y+" "+score);
         stroke("black");
         fill("red");
         strokeWeight(2);
         //if y coordinate diff between left knee and left foot is less than 100, you are wrong!
         //left knee is red, right knee is green, left foot is blue, right foot is black
         if (index == 9){
-        console.log("coordinate for left wrist is: "+x+" "+y);
-        circle(x, y, 10);
+        console.log("JOINT 9 is "+x+" "+y);
+        //circle(x, y, 10);
         image(img_sensor, x-5, y-5);
-          if (x>235 && x<320 && y>15 && y<75){
+          if (x>382 && x<466 && y>13 && y<75){
             console.log("Sensor Should Show");
             correct++;
             image(img_sensorgood, x-20, y-20);
@@ -855,45 +854,40 @@ function draw() {
           console.log("coordinate for right wrist is: "+x+" "+y);
         circle(x, y, 10);
         image(img_sensor, x-5, y-5);
-          if (x>235 && x<320 && y>15 && y<75){
+          if (x>206 && x<285 && y>5 && y<75){
             correct++;
-            console.log("Sensor Should Show");
             image(img_sensorgood, x-20, y-20);
           }
         } else if (index==7){
       //console.log("coordinate for left elbow is: "+x+" "+y);
         circle(x, y, 10);
         image(img_sensor, x-5, y-5);
-          if (x>325 && x<390 && y>60 && y<135){
+          if (x>369 && x<440 && y>55 && y<121){
             correct++;
-            console.log("Sensor Should Show");
             image(img_sensorgood, x-20, y-20);
           }
         } else if (index==8){
       //console.log("coordinate for right elbow is: "+x+" "+y);
         circle(x, y, 10);
         image(img_sensor, x-5, y-5);
-          if (x>275 && x<340 && y>60 && y<135){
+          if (x>241 && x<317 && y>52 && y<129){
             correct++;
-            console.log("Sensor Should Show");
             image(img_sensorgood, x-20, y-20);
           }
         } else if (index==13){
       //console.log("coordinate for left knee is: "+x+" "+y);
         circle(x, y, 10);
         image(img_sensor, x-5, y-5);
-          if (x>400 && x<500 && y>280 && y<375){
+          if (x>334 && x<400 && y>305 && y<371){
             correct++;
-            console.log("Sensor Should Show");
             image(img_sensorgood, x-20, y-20);
           }
         }else if (index==14){
       //console.log("coordinate for right knee is: "+x+" "+y);
         circle(x, y, 10);
         image(img_sensor, x-5, y-5);
-          if (x>220 && x<285 && y>240 && y<400){
+          if (x>282 && x<353 && y>302 && y<373){
             correct++;
-            console.log("Sensor Should Show");
             image(img_sensorgood, x-20, y-20);
           }
         }else{
@@ -905,7 +899,7 @@ function draw() {
     }
     }
     
-    //3 - crab game
+    //3 - pose3
     else if(main_start && game3){
     index=0;
     correct = 0;
@@ -921,7 +915,7 @@ function draw() {
           //console.log("coordinate for left wrist is: "+x+" "+y);
         circle(x, y, 10);
         leftwristsensor = image(img_sensor, x-5, y-5);
-          if (x>400 && x<480 && y>60 && y<160){
+          if (x>323 && x<392 && y>172 && y<240){
             correct++;
             console.log("Sensor Should Show");
             leftwristsensor = image(img_sensorgood, x-20, y-20);
@@ -930,7 +924,7 @@ function draw() {
           //console.log("coordinate for right wrist is: "+x+" "+y);
         circle(x, y, 10);
         rightwristsensor = image(img_sensor, x-5, y-5);
-          if (x>160 && x<240 && y>60 && y<160){
+          if (x>246 && x<316 && y>172 && y<242){
             correct++;
             console.log("Sensor Should Show");
             rightwristsensor = image(img_sensorgood, x-20, y-20);
@@ -939,7 +933,7 @@ function draw() {
       //console.log("coordinate for left elbow is: "+x+" "+y);
         circle(x, y, 10);
         leftelbowsensor = image(img_sensor, x-5, y-5);
-          if (x>390 && x<470 && y>150 && y<250){
+          if (x>322 && x<390 && y>223 && y<290){
             correct++;
             console.log("Sensor Should Show");
             leftelbowsensor = image(img_sensorgood, x-20, y-20);
@@ -948,7 +942,7 @@ function draw() {
       //console.log("coordinate for right elbow is: "+x+" "+y);
         circle(x, y, 10);
         rightelbowsensor = image(img_sensor, x-5, y-5);
-          if (x>165 && x<245 && y>150 && y<250){
+          if (x>246 && x<313 && y>228 && y<298){
             correct++;
             console.log("Sensor Should Show");
             rightelbowsensor = image(img_sensorgood, x-20, y-20);
@@ -957,7 +951,7 @@ function draw() {
       //console.log("coordinate for left knee is: "+x+" "+y);
         circle(x, y, 10);
         leftkneesensor = image(img_sensor, x-5, y-5);
-          if (x>400 && x<500 && y>290 && y<390){
+          if (x>295 && x<362 && y>298 && y<369){
             correct++;
             console.log("Sensor Should Show");
             leftkneesensor = image(img_sensorgood, x-20, y-20);
@@ -966,7 +960,7 @@ function draw() {
       //console.log("coordinate for right knee is: "+x+" "+y);
         circle(x, y, 10);
         rightkneesensor = image(img_sensor, x-5, y-5);
-          if (x>145 && x<245 && y>290 && y<390){
+          if (x>248 && x<316 && y>304 && y<378){
             correct++;
             console.log("Sensor Should Show");
             rightkneesensor = image(img_sensorgood, x-20, y-20);
@@ -980,7 +974,7 @@ function draw() {
     }
     }
     
-    //4 - tarantula game
+    //4 - pose4
     else if (main_start && game4){
       index=0;
       console.log(poses);
@@ -993,28 +987,62 @@ function draw() {
         //if y coordinate diff between left knee and left foot is less than 100, you are wrong!
         //left knee is red, right knee is green, left foot is blue, right foot is black
         if (index == 9){
-          fill("red");
           //console.log("coordinate for left wrist is: "+x+" "+y);
-        circle(x, y, 10);
+        //circle(x, y, 10);
           leftwristy = y;
           fill(255);
         leftwristsensor = image(img_sensor, x-5, y-5);
+        if (x>323 && x<392 && y>152 && y<220){
+          correct++;
+          leftwristsensor = image(img_sensorgood, x-20, y-20);
+        }
         } else if(index==10){
           //console.log("coordinate for right wrist is: "+x+" "+y);
-        circle(x, y, 10);
+        //circle(x, y, 10);
           rightwristy = y;
         rightwristsensor = image(img_sensor, x-5, y-5);
-
+        if (x>246 && x<316 && y>152 && y<222){
+          correct++;
+          rightwristsensor = image(img_sensorgood, x-20, y-20);
+        }
+        } else if (index==7){
+          //console.log("coordinate for left elbow is: "+x+" "+y);
+            circle(x, y, 10);
+            leftelbowsensor = image(img_sensor, x-5, y-5);
+              if (x>322 && x<390 && y>203 && y<270){
+                correct++;
+                console.log("Sensor Should Show");
+                leftelbowsensor = image(img_sensorgood, x-20, y-20);
+              }
+        } else if (index==8){
+      //console.log("coordinate for right elbow is: "+x+" "+y);
+        circle(x, y, 10);
+        rightelbowsensor = image(img_sensor, x-5, y-5);
+          if (x>246 && x<313 && y>208 && y<278){
+            correct++;
+            console.log("Sensor Should Show");
+            rightelbowsensor = image(img_sensorgood, x-20, y-20);
+          }
         } else if (index==13){
-      //console.log("coordinate for left knee is: "+x+" "+y);
-        circle(x, y, 10);
-         leftkneey = y;
+        //console.log("coordinate for left knee is: "+x+" "+y);
+        //circle(x, y, 10);
+        leftkneey = y;
         leftkneesensor = image(img_sensor, x-5, y-5);
+        if (x>295 && x<362 && y>298 && y<369){
+          correct++;
+          console.log("Sensor Should Show");
+          leftkneesensor = image(img_sensorgood, x-20, y-20);
+        }
         }else if (index==14){
-      //console.log("coordinate for right knee is: "+x+" "+y);
-        circle(x, y, 10);
-         rightkneey = y;
+        //console.log("coordinate for right knee is: "+x+" "+y);
+        //circle(x, y, 10);
+        rightkneey = y;
         rightkneesensor = image(img_sensor, x-5, y-5);
+        if (x>248 && x<316 && y>304 && y<378){
+          correct++;
+          console.log("Sensor Should Show");
+          rightkneesensor = image(img_sensorgood, x-20, y-20);
+        }
         }else{
         fill(255);
         circle(x, y, 10);
@@ -1022,17 +1050,9 @@ function draw() {
       }
       index++;
    }
-      
-      console.log(leftwristy, leftkneey, rightwristy, rightkneey);
-      if (leftwristy>leftkneey || rightwristy>rightkneey && !win){
-      win = true;
-      numWins++;
-      game4WinTime = currentTime;
     }
-    }
-    //end of tarantula game
     
-     //5 - flamingo game
+     //5 - pose5
     else if(main_start && game5){
     index=0;
     correct = 0;
@@ -1046,9 +1066,9 @@ function draw() {
         //left knee is red, right knee is green, left foot is blue, right foot is black
         if (index == 9){
           //console.log("coordinate for left wrist is: "+x+" "+y);
-        circle(x, y, 10);
+        //circle(x, y, 10);
         leftwristsensor = image(img_sensor, x-5, y-5);
-          if (x>350 && x<400 && y>10 && y<60){
+          if (x>326 && x<397 && y>5 && y<80){
             correct++;
             leftwristsensor = image(img_sensorgood, x-20, y-20);
           }
@@ -1056,7 +1076,7 @@ function draw() {
           //console.log("coordinate for right wrist is: "+x+" "+y);
         circle(x, y, 10);
         rightwristsensor = image(img_sensor, x-5, y-5);
-          if (x>260 && x<310 && y>225 && y<275){
+          if (x>250 && x<325 && y>0 && y<74){
             correct++;
             rightwristsensor = image(img_sensorgood, x-20, y-20);
           }
@@ -1064,7 +1084,7 @@ function draw() {
       //console.log("coordinate for left elbow is: "+x+" "+y);
         circle(x, y, 10);
         leftelbowsensor = image(img_sensor, x-5, y-5);
-          if (x>350 && x<400 && y>70 && y<120){
+          if (x>340 && x<422 && y>56 && y<133){
             correct++;
             leftelbowsensor = image(img_sensorgood, x-20, y-20);
           }
@@ -1072,7 +1092,7 @@ function draw() {
       //console.log("coordinate for right elbow is: "+x+" "+y);
         circle(x, y, 10);
         rightelbowsensor = image(img_sensor, x-5, y-5);
-          if (x>250 && x<300 && y>165 && y<215){
+          if (x>228 && x<309 && y>59 && y<131){
             correct++;
             rightelbowsensor = image(img_sensorgood, x-20, y-20);
           }
@@ -1080,7 +1100,7 @@ function draw() {
       //console.log("coordinate for left knee is: "+x+" "+y);
         circle(x, y, 10);
         leftkneesensor = image(img_sensor, x-5, y-5);
-          if (x>315 && x<365 && y>350 && y<400){
+          if (x>308 && x<386 && y>344 && y<418){
             correct++;
             leftkneesensor = image(img_sensorgood, x-20, y-20);
           }
@@ -1088,7 +1108,7 @@ function draw() {
       //console.log("coordinate for right knee is: "+x+" "+y);
         circle(x, y, 10);
         rightkneesensor = image(img_sensor, x-5, y-5);
-          if (x>285 && x<335 && y>340 && y<390){
+          if (x>289 && x<365 && y>305 && y<384){
             correct++;
             rightkneesensor = image(img_sensorgood, x-20, y-20);
           }
@@ -1102,7 +1122,7 @@ function draw() {
     }
     
     
-     //6 - starfish game
+     //6 - pose6
     else if(main_start && game6){
     index=0;
     correct = 0;
@@ -1118,7 +1138,7 @@ function draw() {
           //console.log("coordinate for left wrist is: "+x+" "+y);
         circle(x, y, 10);
         leftwristsensor = image(img_sensor, x-5, y-5);
-          if (x>445 && x<505 && y>10 && y<70){
+          if (x>342 && x<425 && y>53 && y<128){
             correct++;
             leftwristsensor = image(img_sensorgood, x-20, y-20);
           }
@@ -1126,7 +1146,7 @@ function draw() {
           //console.log("coordinate for right wrist is: "+x+" "+y);
         circle(x, y, 10);
         rightwristsensor = image(img_sensor, x-5, y-5);
-          if (x>160 && x<220 && y>10 && y<70){
+          if (x>214 && x<296 && y>46 && y<128){
             correct++;
             rightwristsensor = image(img_sensorgood, x-20, y-20);
           }
@@ -1134,7 +1154,7 @@ function draw() {
       //console.log("coordinate for left elbow is: "+x+" "+y);
         circle(x, y, 10);
         leftelbowsensor = image(img_sensor, x-5, y-5);
-          if (x>385 && x<445 && y>50 && y<110){
+          if (x>104 && x<188 && y>354 && y<448){
             correct++;
             leftelbowsensor = image(img_sensorgood, x-20, y-20);
           }
@@ -1142,7 +1162,7 @@ function draw() {
       //console.log("coordinate for right elbow is: "+x+" "+y);
         circle(x, y, 10);
         rightelbowsensor = image(img_sensor, x-5, y-5);
-          if (x>200 && x<260 && y>50 && y<110){
+          if (x>204 && x<288 && y>115 && y<186){
             correct++;
             rightelbowsensor = image(img_sensorgood, x-20, y-20);
           }
@@ -1150,7 +1170,7 @@ function draw() {
       //console.log("coordinate for left knee is: "+x+" "+y);
         circle(x, y, 10);
         leftkneesensor = image(img_sensor, x-5, y-5);
-          if (x>340 && x<400 && y>350 && y<410){
+          if (x>343 && x<406 && y>300 && y<383){
             correct++;
             leftkneesensor = image(img_sensorgood, x-20, y-20);
           }
@@ -1158,7 +1178,7 @@ function draw() {
       //console.log("coordinate for right knee is: "+x+" "+y);
         circle(x, y, 10);
         rightkneesensor = image(img_sensor, x-5, y-5);
-          if (x>230 && x<290 && y>350 && y<410){
+          if (x>291 && x<357 && y>311 && y<384){
             correct++;
             rightkneesensor = image(img_sensorgood, x-20, y-20);
           }
@@ -1171,7 +1191,7 @@ function draw() {
     }
     }
     
-     //7 - Pose 01/02
+     //7 - Pose7
     else if (main_start && game7){
       index=0;
       correct = 0;
@@ -1187,7 +1207,7 @@ function draw() {
           //console.log("coordinate for left wrist is: "+x+" "+y);
           circle(x, y, 10);
           leftwristsensor = image(img_sensor, x-5, y-5);
-          if (x>340 && x<410 && y>225 && y<305){
+          if (x>316 && x<386 && y>208 && y<295){
             correct++;
             leftwristsensor = image(img_sensorgood, x-20, y-20);
           }
@@ -1195,7 +1215,7 @@ function draw() {
           //console.log("coordinate for right wrist is: "+x+" "+y);
           circle(x, y, 10);
           rightwristsensor = image(img_sensor, x-5, y-5);
-          if (x>220 && x<290 && y>260 && y<340){
+          if (x>256 && x<322 && y>212 && y<282){
             rightwristsensor = image(img_sensorgood, x-20, y-20);
             correct++;
           }
@@ -1203,7 +1223,7 @@ function draw() {
       //console.log("coordinate for left elbow is: "+x+" "+y);
         circle(x, y, 10);
         leftelbowsensor = image(img_sensor, x-5,y-5);
-          if (x>340 && x<420 && y>165 && y<240){
+          if (x>335 && x<423 && y>160 && y<241){
             correct++;
             leftelbowsensor = image(img_sensorgood, x-20,y-20);
           }
@@ -1211,7 +1231,7 @@ function draw() {
       //console.log("coordinate for right elbow is: "+x+" "+y);
         circle(x, y, 10);
         rightelbowsensor = image(img_sensor, x-5,y-5);
-          if (x>240 && x<320 && y>135 && y<210){
+          if (x>215 && x<299 && y>161 && y<240){
             correct++;
             rightelbowsensor = image(img_sensorgood, x-20,y-20);
           }
@@ -1219,7 +1239,7 @@ function draw() {
       //console.log("coordinate for left knee is: "+x+" "+y);
         circle(x, y, 10);
         leftkneesensor = image(img_sensor, x-5, y-5);
-          if (x>300 && x<370 && y>315 && y<390){
+          if (x>319 && x<410 && y>317 && y<400){
             correct++;
             leftkneesensor = image(img_sensorgood, x-20, y-20);
           }
@@ -1227,7 +1247,7 @@ function draw() {
       //console.log("coordinate for right knee is: "+x+" "+y);
         circle(x, y, 10);
         rightkneesensor = image(img_sensor, x-5,y-5);
-          if (x>270 && x<340 && y>315 && y<390){
+          if (x>228 && x<319 && y>327 && y<400){
             correct++;
             rightkneesensor = image(img_sensorgood, x-20,y-20);
           }
@@ -1240,7 +1260,7 @@ function draw() {
     }
     }
   
-      //8 - Pose 03/04
+      //8 - Pose8
     else if (main_start && game8){
       index=0;
       correct = 0;
@@ -1256,7 +1276,7 @@ function draw() {
           //console.log("coordinate for left wrist is: "+x+" "+y);
           circle(x, y, 10);
           leftwristsensor = image(img_sensor, x-5, y-5);
-          if (x>340 && x<410 && y>225 && y<305){
+          if (x>426 && x<516 && y>64 && y<150){
             correct++;
             leftwristsensor = image(img_sensorgood, x-20, y-20);
           }
@@ -1264,7 +1284,7 @@ function draw() {
           //console.log("coordinate for right wrist is: "+x+" "+y);
           circle(x, y, 10);
           rightwristsensor = image(img_sensor, x-5, y-5);
-          if (x>220 && x<290 && y>260 && y<340){
+          if (x>126 && x<210 && y>67 && y<151){
             rightwristsensor = image(img_sensorgood, x-20, y-20);
             correct++;
           }
@@ -1272,7 +1292,7 @@ function draw() {
       //console.log("coordinate for left elbow is: "+x+" "+y);
         circle(x, y, 10);
         leftelbowsensor = image(img_sensor, x-5,y-5);
-          if (x>340 && x<420 && y>165 && y<240){
+          if (x>367 && x<455 && y>82 && y<165){
             correct++;
             leftelbowsensor = image(img_sensorgood, x-20,y-20);
           }
@@ -1280,7 +1300,7 @@ function draw() {
       //console.log("coordinate for right elbow is: "+x+" "+y);
         circle(x, y, 10);
         rightelbowsensor = image(img_sensor, x-5,y-5);
-          if (x>240 && x<320 && y>135 && y<210){
+          if (x>187 && x<276 && y>79 && y<179){
             correct++;
             rightelbowsensor = image(img_sensorgood, x-20,y-20);
           }
@@ -1288,7 +1308,7 @@ function draw() {
       //console.log("coordinate for left knee is: "+x+" "+y);
         circle(x, y, 10);
         leftkneesensor = image(img_sensor, x-5, y-5);
-          if (x>300 && x<370 && y>315 && y<390){
+          if (x>319 && x<425 && y>321 && y<409){
             correct++;
             leftkneesensor = image(img_sensorgood, x-20, y-20);
           }
@@ -1296,7 +1316,7 @@ function draw() {
       //console.log("coordinate for right knee is: "+x+" "+y);
         circle(x, y, 10);
         rightkneesensor = image(img_sensor, x-5,y-5);
-          if (x>270 && x<340 && y>315 && y<390){
+          if (x>226 && x<319 && y>323 && y<404){
             correct++;
             rightkneesensor = image(img_sensorgood, x-20,y-20);
           }
