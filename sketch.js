@@ -140,17 +140,17 @@ let img_result;
 //--------------------------------------- LOADING GAME ---------------------------------------//
 function preload() {
   // preload() runs once, loads all required images
-  img_pose1 = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/bdc424a2-6175-4ded-a083-daf53f4d050a.Pose%201.png?v=1689563080108');
-  img_pose2 = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/85f7a967-4139-404e-81f2-bd42c97520f2.Pose%202.png?v=1689563080224');
-  img_pose3 = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/48e61a9d-e78e-4fd7-aa4d-f1691971fd7a.Pose%203.png?v=1689563079951');
-  img_pose4 = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/3ab9d87f-8781-4ea6-908a-6c691beaa456.Pose%204.png?v=1689563080261');
-  img_pose5 = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/e779e311-1c1f-48e3-b8ae-d7c4424fcad5.Pose%205.png?v=1689563080078');
-  img_pose6 = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/08d20676-e218-4c98-b68f-98570740af93.Pose%206.png?v=1689563079508');
-  img_pose7 = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/550536b1-243c-41c4-a50f-82880dc4d256.Pose%207.png?v=1689563079508');
-  img_pose8 = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/fae7e3f9-50b5-496b-9ff5-734dfb56f435.Pose%208.png?v=1689563079585');
-  gif_welcome = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/8450eefc-f005-444c-8763-95589366e49b.Welcome-Copy.png?v=1689563079736');
-  img_gamestart = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/17ce4661-1975-4e40-a38b-63b100d3ceb5.Instruction-Copy.png?v=1689563080044');
-  img_result = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/109bf45a-8c06-498b-99f4-9ad92922af42.Instructions%20(final%20screen)%20-%20Copy.png?v=1689563079779');
+  img_pose1 = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/a2d8929a-500f-45f6-ba08-530d494fe409.Pose%201%20(1).png?v=1689616946306');
+  img_pose2 = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/94a0e3c4-7a72-42d8-91a8-a66091cd5c21.Pose%202%20(1).png?v=1689616946195');
+  img_pose3 = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/c795003c-007a-4bb2-a386-6a60279768af.Pose%2013.png?v=1689616945921');
+  img_pose4 = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/9450f93e-9e3d-404d-a270-600bb5f25b89.Pose%2014.png?v=1689616945849');
+  img_pose5 = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/48c9bd5c-c429-497b-b1ea-4265c71415e5.Pose%2025.png?v=1689616945587');
+  img_pose6 = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/54cc9fe9-b15c-427b-a7bd-cf65781ffab5.Pose%2026.png?v=1689616945629');
+  img_pose7 = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/e81cb448-0d80-4bc6-806f-2b0b5de79425.Pose%2037.png?v=1689616946243');
+  img_pose8 = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/94d66c71-6b31-4480-9868-fe7cdcbb5934.Pose%2038.png?v=1689616945954');
+  gif_welcome = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/d5e3ff65-2f7f-4dd3-ab7a-77dbd6c4b854.Welcome-Copy%20(1).png?v=1689616945762');
+  img_gamestart = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/3c03b4d1-6717-4f06-8f77-6e05af2d0301.Instruction-Copy%20(1).png?v=1689616946459');
+  img_result = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/3825f6e1-5716-49f7-b8f7-fd4ed97ad467.Instructions%20(final%20screen)%20-%20Copy%20(1).png?v=1689616945528');
   img_sensor = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/sensor.png?v=1689170812652')
   img_sensorgood = loadImage('https://cdn.glitch.global/a8aeaf2d-c691-48c6-bc27-dca922a68fa3/sensorcorrect.png?v=1689170812819')
 }
