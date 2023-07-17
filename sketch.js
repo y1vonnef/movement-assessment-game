@@ -290,7 +290,7 @@ function draw() {
       textSize(50);
       //translate(width, 0); // Translate to the right edge of the canvas
       //scale(-1, 1); // Flip the canvas horizontally    
-      text(2-startCountDown, 300, 230);
+      text(3-startCountDown, 300, 230);
   }
   //----------------Game 2 Pose2----------------
     else if (main_start && game2){
@@ -300,7 +300,7 @@ function draw() {
       textSize(50);
       //translate(width, 0); // Translate to the right edge of the canvas
       //scale(-1, 1); // Flip the canvas horizontally    
-      text(2-startCountDown, 300, 230);
+      text(3-startCountDown, 300, 230);
   }
   //----------------Game 3 Pose3----------------
   else if (main_start && game3){
@@ -310,7 +310,7 @@ function draw() {
       textSize(50);
       //translate(width, 0); // Translate to the right edge of the canvas
       //scale(-1, 1); // Flip the canvas horizontally    
-      text(2-startCountDown, 300, 230);
+      text(3-startCountDown, 300, 230);
   }
   //----------------Game 4 Pose4----------------
   else if (main_start &&game4){
@@ -320,7 +320,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }
   //----------------Game 5 pose5----------------
   else if (main_start &&game5){
@@ -330,7 +330,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }
   //----------------Game 6 pose6----------------
   else if (main_start &&game6){
@@ -340,7 +340,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }
   //-------------------------------------------------------------------------
   //----------------Game 7 Pose7----------------
@@ -352,7 +352,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }
   //----------------Game 8 Pose8----------------
     else if (main_start &&game8){
@@ -363,7 +363,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }    else if (main_start &&game9){
     image(img_pose3,0,0);
     // Need = Countdown
@@ -372,7 +372,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }    else if (main_start &&game10){
     image(img_pose4,0,0);
     // Need = Countdown
@@ -381,7 +381,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }    else if (main_start &&game11){
     image(img_pose3,0,0);
     // Need = Countdown
@@ -390,7 +390,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }    else if (main_start &&game12){
     image(img_pose4,0,0);
     // Need = Countdown
@@ -399,7 +399,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }    else if (main_start &&game13){
     image(img_pose5,0,0);
     // Need = Countdown
@@ -408,7 +408,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }    else if (main_start &&game14){
     image(img_pose6,0,0);
     // Need = Countdown
@@ -417,7 +417,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }    else if (main_start &&game15){
     image(img_pose5,0,0);
     // Need = Countdown
@@ -426,7 +426,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }    else if (main_start &&game16){
     image(img_pose6,0,0);
     // Need = Countdown
@@ -435,7 +435,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }    else if (main_start &&game17){
     image(img_pose5,0,0);
     // Need = Countdown
@@ -444,7 +444,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }    else if (main_start &&game18){
     image(img_pose6,0,0);
     // Need = Countdown
@@ -453,7 +453,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }    else if (main_start &&game19){
     image(img_pose7,0,0);
     // Need = Countdown
@@ -462,7 +462,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }    else if (main_start &&game20){
     image(img_pose8,0,0);
     // Need = Countdown
@@ -471,7 +471,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }    else if (main_start &&game21){
     image(img_pose7,0,0);
     // Need = Countdown
@@ -480,7 +480,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }    else if (main_start &&game22){
     image(img_pose8,0,0);
     // Need = Countdown
@@ -489,7 +489,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }    else if (main_start &&game23){
     image(img_pose7,0,0);
     // Need = Countdown
@@ -498,7 +498,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }    else if (main_start &&game24){
     image(img_pose8,0,0);
     // Need = Countdown
@@ -507,7 +507,7 @@ function draw() {
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(2-startCountDown, 300, 230);
+    text(3-startCountDown, 300, 230);
   }
 
   // Fail safe game start screen
@@ -845,7 +845,7 @@ function draw() {
   //----------------TIME ELAPSE CODE----------------
   //display times up, and move on to the next game
   //Times up for game1
-  if(startCountDown >= 2 && game1){
+  if(startCountDown >= 3 && game1){
     fill(0);
     textSize(30);
     translate(width, 0); // Translate to the right edge of the canvas
@@ -862,7 +862,7 @@ function draw() {
     // }
      } 
     //Times up for game2
-  else if(startCountDown >= 2 && game2){
+  else if(startCountDown >= 3 && game2){
     fill(0);
     textSize(30);
     translate(width, 0); // Translate to the right edge of the canvas
@@ -881,7 +881,7 @@ function draw() {
     // }
      } 
   //Times up for game3
-  else if (startCountDown >= 2 && game3){
+  else if (startCountDown >= 3 && game3){
     fill(0);
     textSize(30);
     translate(width, 0); // Translate to the right edge of the canvas
@@ -899,7 +899,7 @@ function draw() {
     }
   
   //Times up for game4
-  else if (startCountDown >= 2 && game4){
+  else if (startCountDown >= 3 && game4){
     fill(255);
     textSize(30);
     translate(width, 0); // Translate to the right edge of the canvas
@@ -917,7 +917,7 @@ function draw() {
   }
   
     //Times up for game5
-  else if (startCountDown >= 2 && game5){
+  else if (startCountDown >= 3 && game5){
     fill(0);
     textSize(30);
     translate(width, 0); // Translate to the right edge of the canvas
@@ -935,7 +935,7 @@ function draw() {
   }
   
    //Times up for game6
-  else if (startCountDown >= 2 && game6){
+  else if (startCountDown >= 3 && game6){
     fill(0);
     textSize(30);
     translate(width, 0); // Translate to the right edge of the canvas
@@ -953,7 +953,7 @@ function draw() {
   }
   
   //Times up for game7
-  else if (startCountDown >= 2 && game7){
+  else if (startCountDown >= 3 && game7){
     fill(0);
     textSize(30);
     translate(width, 0); // Translate to the right edge of the canvas
@@ -971,7 +971,7 @@ function draw() {
   }
   
    //Times up for game8
-  else if (startCountDown >= 2 && game8){
+  else if (startCountDown >= 3 && game8){
     fill(0);
     textSize(30);
     translate(width, 0); // Translate to the right edge of the canvas
@@ -989,7 +989,7 @@ function draw() {
   }
   
      //Times up for game8
-     else if (startCountDown >= 2 && game9){
+     else if (startCountDown >= 3 && game9){
       fill(0);
       textSize(30);
       translate(width, 0); // Translate to the right edge of the canvas
@@ -1007,7 +1007,7 @@ function draw() {
     }
 
          //Times up for game8
-         else if (startCountDown >= 2 && game10){
+         else if (startCountDown >= 3 && game10){
           fill(0);
           textSize(30);
           translate(width, 0); // Translate to the right edge of the canvas
@@ -1024,7 +1024,7 @@ function draw() {
           // }
         }
      //Times up for game8
-     else if (startCountDown >= 2 && game11){
+     else if (startCountDown >= 3 && game11){
       fill(0);
       textSize(30);
       translate(width, 0); // Translate to the right edge of the canvas
@@ -1041,7 +1041,7 @@ function draw() {
       // }
     }
      //Times up for game8
-     else if (startCountDown >= 2 && game12){
+     else if (startCountDown >= 3 && game12){
       fill(0);
       textSize(30);
       translate(width, 0); // Translate to the right edge of the canvas
@@ -1058,7 +1058,7 @@ function draw() {
       // }
     }
          //Times up for game8
-         else if (startCountDown >= 2 && game13){
+         else if (startCountDown >= 3 && game13){
           fill(0);
           textSize(30);
           translate(width, 0); // Translate to the right edge of the canvas
@@ -1075,7 +1075,7 @@ function draw() {
           // }
         }
      //Times up for game8
-     else if (startCountDown >= 2 && game14){
+     else if (startCountDown >= 3 && game14){
       fill(0);
       textSize(30);
       translate(width, 0); // Translate to the right edge of the canvas
@@ -1093,7 +1093,7 @@ function draw() {
     }
 
      //Times up for game8
-     else if (startCountDown >= 2 && game15){
+     else if (startCountDown >= 3 && game15){
       fill(0);
       textSize(30);
       translate(width, 0); // Translate to the right edge of the canvas
@@ -1110,7 +1110,7 @@ function draw() {
       // }
     }
          //Times up for game8
-         else if (startCountDown >= 2 && game16){
+         else if (startCountDown >= 3 && game16){
           fill(0);
           textSize(30);
           translate(width, 0); // Translate to the right edge of the canvas
@@ -1127,7 +1127,7 @@ function draw() {
           // }
         }
      //Times up for game8
-     else if (startCountDown >= 2 && game17){
+     else if (startCountDown >= 3 && game17){
       fill(0);
       textSize(30);
       translate(width, 0); // Translate to the right edge of the canvas
@@ -1144,7 +1144,7 @@ function draw() {
       // }
     }
      //Times up for game8
-     else if (startCountDown >= 2 && game18){
+     else if (startCountDown >= 3 && game18){
       fill(0);
       textSize(30);
       translate(width, 0); // Translate to the right edge of the canvas
@@ -1161,7 +1161,7 @@ function draw() {
       // }
     }
      //Times up for game8
-     else if (startCountDown >= 2 && game19){
+     else if (startCountDown >= 3 && game19){
       fill(0);
       textSize(30);
       translate(width, 0); // Translate to the right edge of the canvas
@@ -1178,7 +1178,7 @@ function draw() {
       // }
     }
      //Times up for game8
-     else if (startCountDown >= 2 && game20){
+     else if (startCountDown >= 3 && game20){
       fill(0);
       textSize(30);
       translate(width, 0); // Translate to the right edge of the canvas
@@ -1195,7 +1195,7 @@ function draw() {
       // }
     }
      //Times up for game8
-     else if (startCountDown >= 2 && game21){
+     else if (startCountDown >= 3 && game21){
       fill(0);
       textSize(30);
       translate(width, 0); // Translate to the right edge of the canvas
@@ -1212,7 +1212,7 @@ function draw() {
       // }
     }
          //Times up for game8
-         else if (startCountDown >= 2 && game22){
+         else if (startCountDown >= 3 && game22){
           fill(0);
           textSize(30);
           translate(width, 0); // Translate to the right edge of the canvas
@@ -1229,7 +1229,7 @@ function draw() {
           // }
         }
        //Times up for game8
-       else if (startCountDown >= 2 && game23){
+       else if (startCountDown >= 3 && game23){
         fill(0);
         textSize(30);
         translate(width, 0); // Translate to the right edge of the canvas
@@ -1246,7 +1246,7 @@ function draw() {
         // }
       }
      //Times up for game8
-     else if (startCountDown >= 2 && game24){
+     else if (startCountDown >= 3 && game24){
       fill(0);
       textSize(30);
       translate(width, 0); // Translate to the right edge of the canvas
