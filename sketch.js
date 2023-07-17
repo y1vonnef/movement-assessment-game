@@ -1314,20 +1314,20 @@ function draw() {
        index1++;
     }
     
-    stroke("white");
+    stroke("grey");
     strokeWeight(2);
-    // line(rightwristx,rightwristy,rightelbowx,rightelbowy);
-    // line(leftwristx,leftwristy,leftelbowx,leftelbowy);
-    // line(rightelbowx,rightelbowy,rightshoulderx,rightshouldery);
-    // line(leftelbowx,leftelbowy,leftshoulderx,leftshouldery);
-    // line(rightshoulderx,rightshouldery,leftshoulderx,leftshouldery);
-    // line(rightshoulderx,rightshouldery,righthipx,righthipy);
-    // line(leftshoulderx,leftshouldery,lefthipx,lefthipy);
-    // line(lefthipx,lefthipy,righthipx,righthipy);
-    // line(lefthipx,lefthipy,leftkneex,leftkneey);
-    // line(righthipx,righthipy,rightkneex,rightkneey);
-    // line(rightkneex,rightkneey,rightfootx,rightfooty);
-    // line(leftkneex,leftkneey,leftfootx,leftfooty);
+    line(rightwristx,rightwristy,rightelbowx,rightelbowy);
+    line(leftwristx,leftwristy,leftelbowx,leftelbowy);
+    line(rightelbowx,rightelbowy,rightshoulderx,rightshouldery);
+    line(leftelbowx,leftelbowy,leftshoulderx,leftshouldery);
+    line(rightshoulderx,rightshouldery,leftshoulderx,leftshouldery);
+    line(rightshoulderx,rightshouldery,righthipx,righthipy);
+    line(leftshoulderx,leftshouldery,lefthipx,lefthipy);
+    line(lefthipx,lefthipy,righthipx,righthipy);
+    line(lefthipx,lefthipy,leftkneex,leftkneey);
+    line(righthipx,righthipy,rightkneex,rightkneey);
+    line(rightkneex,rightkneey,rightfootx,rightfooty);
+    line(leftkneex,leftkneey,leftfootx,leftfooty);
 
     if (!main_start){
       index=0;
