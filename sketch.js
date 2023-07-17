@@ -4,7 +4,6 @@ let detector;
 let poses; 
 let video;
 let speech;
-let isSpeaking = false;
 let in_frame; 
 
 // Games to be initialized
@@ -17,6 +16,23 @@ let game5=false; //Pose5
 let game6=false; //Pose6
 let game7=false; //Pose7
 let game8=false; //Pose8
+let game9=false; //Pose1
+let game10=false; //Pose2
+let game11=false; //Pose3
+let game12=false; //Pose4
+let game13=false; //Pose5
+let game14=false; //Pose6
+let game15=false; //Pose7
+let game16=false; //Pose8
+let game17=false; //Pose1
+let game18=false; //Pose2
+let game19=false; //Pose3
+let game20=false; //Pose4
+let game21=false; //Pose5
+let game22=false; //Pose6
+let game23=false; //Pose7
+let game24=false; //Pose8
+
 
 // Game Variables
 let correct; // The amount of correct joints
@@ -37,6 +53,22 @@ let game5StartTime;
 let game6StartTime;
 let game7StartTime;
 let game8StartTime;
+let game9StartTime;
+let game10StartTime;
+let game11StartTime;
+let game12StartTime;
+let game13StartTime;
+let game14StartTime;
+let game15StartTime;
+let game16StartTime;
+let game17StartTime;
+let game18StartTime;
+let game19StartTime;
+let game20StartTime;
+let game21StartTime;
+let game22StartTime;
+let game23StartTime;
+let game24StartTime;
 
 // Win Times, Checks Wins
 let game1WinTime;
@@ -47,6 +79,22 @@ let game5WinTime;
 let game6WinTime;
 let game7WinTime;
 let game8WinTime;
+let game9WinTime;
+let game10WinTime;
+let game11WinTime;
+let game12WinTime;
+let game13WinTime;
+let game14WinTime;
+let game15WinTime;
+let game16WinTime;
+let game17WinTime;
+let game18WinTime;
+let game19WinTime;
+let game20WinTime;
+let game21WinTime;
+let game22WinTime;
+let game23WinTime;
+let game24WinTime;
 
 let numWins = 0;
 
@@ -131,9 +179,7 @@ let rightkneesensor;
 let rightfootsensor;
 
 // Star Count/Score
-let img_1star;
-let img_2star;
-let img_3star;
+
 let img_result;
 
 
@@ -209,16 +255,6 @@ function draw() {
     fill(0);
     textSize(30);
     image(img_result,0,0);
-    // if (numWins<3){
-    // image(img_1star,0,0); 
-    //   //text("You won "+numWins+" out of 6!", 300, 230);
-    // }else if (numWins>2 && numWins <5){
-    //   image(img_2star,0,0);
-    //   //text("You won "+numWins+" out of 6!", 300, 230);
-    // }else{
-    //   image(img_3star,0,0);
-    //   //text("You won "+numWins+" out of 6!", 300, 230);
-    // }
   }
   
   if (in_frame >= 4 && !main_start){
@@ -228,7 +264,7 @@ function draw() {
   }
   
   //----------------GAME START SCREEN----------------
-  if (main_start && !game1 && !game2 && !game3 && !game4&& !game5 && !game6 &&!game7 &&!game8 &&!done){
+  if (main_start && !game1 && !game2 && !game3 && !game4&& !game5 && !game6 &&!game7 &&!game8 && !game9 && !game10 && !game11 && !game12&& !game13 && !game14 &&!game15 &&!game16&& !game17 && !game18 && !game19 && !game20&& !game21 && !game22 &&!game23 &&!game24 &&!done){
     image(img_gamestart,0,0);
     let startCountDown = currentTime - mainStartTime;
     //console.log(10-startCountDown);
@@ -254,7 +290,7 @@ function draw() {
       textSize(50);
       //translate(width, 0); // Translate to the right edge of the canvas
       //scale(-1, 1); // Flip the canvas horizontally    
-      text(5-startCountDown, 300, 230);
+      text(2-startCountDown, 300, 230);
   }
   //----------------Game 2 Pose2----------------
     else if (main_start && game2){
@@ -264,98 +300,216 @@ function draw() {
       textSize(50);
       //translate(width, 0); // Translate to the right edge of the canvas
       //scale(-1, 1); // Flip the canvas horizontally    
-      text(5-startCountDown, 300, 230);
+      text(2-startCountDown, 300, 230);
   }
   //----------------Game 3 Pose3----------------
   else if (main_start && game3){
-      image(img_pose3, 0,0);
+      image(img_pose1, 0,0);
       startCountDown = currentTime - game3StartTime;
       fill("yellow");
       textSize(50);
       //translate(width, 0); // Translate to the right edge of the canvas
       //scale(-1, 1); // Flip the canvas horizontally    
-      text(5-startCountDown, 300, 230);
+      text(2-startCountDown, 300, 230);
   }
   //----------------Game 4 Pose4----------------
   else if (main_start &&game4){
-    image(img_pose4,0,0);
+    image(img_pose2,0,0);
     startCountDown = currentTime - game4StartTime;
     fill("yellow");
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(5-startCountDown, 300, 230);
+    text(2-startCountDown, 300, 230);
   }
   //----------------Game 5 pose5----------------
   else if (main_start &&game5){
-    image(img_pose5,0,0);
+    image(img_pose1,0,0);
     startCountDown = currentTime - game5StartTime;
     fill("yellow");
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(5-startCountDown, 300, 230);
+    text(2-startCountDown, 300, 230);
   }
   //----------------Game 6 pose6----------------
   else if (main_start &&game6){
-    image(img_pose6,0,0);
+    image(img_pose2,0,0);
     startCountDown = currentTime - game6StartTime;
     fill("yellow");
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(5-startCountDown, 300, 230);
+    text(2-startCountDown, 300, 230);
   }
-  
+  //-------------------------------------------------------------------------
   //----------------Game 7 Pose7----------------
   else if (main_start &&game7){
-    image(img_pose7,0,0);
+    image(img_pose3,0,0);
     // Need = Countdown
-    console.log("startCountDown"+startCountDown);
-    console.log("currentTime"+currentTime);
-    console.log("game7StartTime"+game7StartTime);
     startCountDown = currentTime - game7StartTime;
     fill("yellow");
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(5-startCountDown, 300, 230);
+    text(2-startCountDown, 300, 230);
   }
   //----------------Game 8 Pose8----------------
     else if (main_start &&game8){
-    image(img_pose8,0,0);
+    image(img_pose4,0,0);
     // Need = Countdown
     startCountDown = currentTime - game8StartTime;
     fill("yellow");
     textSize(50);
     //translate(width, 0); // Translate to the right edge of the canvas
     //scale(-1, 1); // Flip the canvas horizontally    
-    text(5-startCountDown, 300, 230);
+    text(2-startCountDown, 300, 230);
+  }    else if (main_start &&game9){
+    image(img_pose3,0,0);
+    // Need = Countdown
+    startCountDown = currentTime - game9StartTime;
+    fill("yellow");
+    textSize(50);
+    //translate(width, 0); // Translate to the right edge of the canvas
+    //scale(-1, 1); // Flip the canvas horizontally    
+    text(2-startCountDown, 300, 230);
+  }    else if (main_start &&game10){
+    image(img_pose4,0,0);
+    // Need = Countdown
+    startCountDown = currentTime - game10StartTime;
+    fill("yellow");
+    textSize(50);
+    //translate(width, 0); // Translate to the right edge of the canvas
+    //scale(-1, 1); // Flip the canvas horizontally    
+    text(2-startCountDown, 300, 230);
+  }    else if (main_start &&game11){
+    image(img_pose3,0,0);
+    // Need = Countdown
+    startCountDown = currentTime - game11StartTime;
+    fill("yellow");
+    textSize(50);
+    //translate(width, 0); // Translate to the right edge of the canvas
+    //scale(-1, 1); // Flip the canvas horizontally    
+    text(2-startCountDown, 300, 230);
+  }    else if (main_start &&game12){
+    image(img_pose4,0,0);
+    // Need = Countdown
+    startCountDown = currentTime - game12StartTime;
+    fill("yellow");
+    textSize(50);
+    //translate(width, 0); // Translate to the right edge of the canvas
+    //scale(-1, 1); // Flip the canvas horizontally    
+    text(2-startCountDown, 300, 230);
+  }    else if (main_start &&game13){
+    image(img_pose5,0,0);
+    // Need = Countdown
+    startCountDown = currentTime - game13StartTime;
+    fill("yellow");
+    textSize(50);
+    //translate(width, 0); // Translate to the right edge of the canvas
+    //scale(-1, 1); // Flip the canvas horizontally    
+    text(2-startCountDown, 300, 230);
+  }    else if (main_start &&game14){
+    image(img_pose6,0,0);
+    // Need = Countdown
+    startCountDown = currentTime - game14StartTime;
+    fill("yellow");
+    textSize(50);
+    //translate(width, 0); // Translate to the right edge of the canvas
+    //scale(-1, 1); // Flip the canvas horizontally    
+    text(2-startCountDown, 300, 230);
+  }    else if (main_start &&game15){
+    image(img_pose5,0,0);
+    // Need = Countdown
+    startCountDown = currentTime - game15StartTime;
+    fill("yellow");
+    textSize(50);
+    //translate(width, 0); // Translate to the right edge of the canvas
+    //scale(-1, 1); // Flip the canvas horizontally    
+    text(2-startCountDown, 300, 230);
+  }    else if (main_start &&game16){
+    image(img_pose6,0,0);
+    // Need = Countdown
+    startCountDown = currentTime - game16StartTime;
+    fill("yellow");
+    textSize(50);
+    //translate(width, 0); // Translate to the right edge of the canvas
+    //scale(-1, 1); // Flip the canvas horizontally    
+    text(2-startCountDown, 300, 230);
+  }    else if (main_start &&game17){
+    image(img_pose5,0,0);
+    // Need = Countdown
+    startCountDown = currentTime - game17StartTime;
+    fill("yellow");
+    textSize(50);
+    //translate(width, 0); // Translate to the right edge of the canvas
+    //scale(-1, 1); // Flip the canvas horizontally    
+    text(2-startCountDown, 300, 230);
+  }    else if (main_start &&game18){
+    image(img_pose6,0,0);
+    // Need = Countdown
+    startCountDown = currentTime - game18StartTime;
+    fill("yellow");
+    textSize(50);
+    //translate(width, 0); // Translate to the right edge of the canvas
+    //scale(-1, 1); // Flip the canvas horizontally    
+    text(2-startCountDown, 300, 230);
+  }    else if (main_start &&game19){
+    image(img_pose7,0,0);
+    // Need = Countdown
+    startCountDown = currentTime - game19StartTime;
+    fill("yellow");
+    textSize(50);
+    //translate(width, 0); // Translate to the right edge of the canvas
+    //scale(-1, 1); // Flip the canvas horizontally    
+    text(2-startCountDown, 300, 230);
+  }    else if (main_start &&game20){
+    image(img_pose8,0,0);
+    // Need = Countdown
+    startCountDown = currentTime - game20StartTime;
+    fill("yellow");
+    textSize(50);
+    //translate(width, 0); // Translate to the right edge of the canvas
+    //scale(-1, 1); // Flip the canvas horizontally    
+    text(2-startCountDown, 300, 230);
+  }    else if (main_start &&game21){
+    image(img_pose7,0,0);
+    // Need = Countdown
+    startCountDown = currentTime - game21StartTime;
+    fill("yellow");
+    textSize(50);
+    //translate(width, 0); // Translate to the right edge of the canvas
+    //scale(-1, 1); // Flip the canvas horizontally    
+    text(2-startCountDown, 300, 230);
+  }    else if (main_start &&game22){
+    image(img_pose8,0,0);
+    // Need = Countdown
+    startCountDown = currentTime - game22StartTime;
+    fill("yellow");
+    textSize(50);
+    //translate(width, 0); // Translate to the right edge of the canvas
+    //scale(-1, 1); // Flip the canvas horizontally    
+    text(2-startCountDown, 300, 230);
+  }    else if (main_start &&game23){
+    image(img_pose7,0,0);
+    // Need = Countdown
+    startCountDown = currentTime - game23StartTime;
+    fill("yellow");
+    textSize(50);
+    //translate(width, 0); // Translate to the right edge of the canvas
+    //scale(-1, 1); // Flip the canvas horizontally    
+    text(2-startCountDown, 300, 230);
+  }    else if (main_start &&game24){
+    image(img_pose8,0,0);
+    // Need = Countdown
+    startCountDown = currentTime - game24StartTime;
+    fill("yellow");
+    textSize(50);
+    //translate(width, 0); // Translate to the right edge of the canvas
+    //scale(-1, 1); // Flip the canvas horizontally    
+    text(2-startCountDown, 300, 230);
   }
-  // //----------------Game 9 Pose5/Pose6----------------
-  //   else if (main_start &&game9){
-  //   image(img_pose5,0,0);
-  //   // Need = Countdown
-  //   startCountDown = currentTime - game9StartTime;
-  //   console.log(10-startCountDown);
-  //   fill("red");
-  //   textSize(50);
-  //   //translate(width, 0); // Translate to the right edge of the canvas
-  //   //scale(-1, 1); // Flip the canvas horizontally    
-  //   text(10-startCountDown, 300, 230);
-  // }
-  // //----------------Game 10 Pose7/Pose8----------------
-  //   else if (main_start &&game10){
-  //   image(img_pose7,0,0);
-  //   // Need = Countdown
-  //   startCountDown = currentTime - game10StartTime;
-  //   console.log(10-startCountDown);
-  //   fill("red");
-  //   textSize(50);
-  //   //translate(width, 0); // Translate to the right edge of the canvas
-  //   //scale(-1, 1); // Flip the canvas horizontally    
-  //   text(10-startCountDown, 300, 230);
-  // }
+
   // Fail safe game start screen
   else if (!main_start){
     image(gif_welcome,0,0);
@@ -409,11 +563,103 @@ function draw() {
     console.log("User wins game 8");
     numWins++;
     console.log("Game 8 win time is "+game8WinTime);
+  }else if (game9 && correct >=3  && !win){
+    win=true;
+    game9WinTime = currentTime;
+    console.log("User wins game 9");
+    numWins++;
+    console.log("Game 9 win time is "+game9WinTime);
+  }else if (game10 && correct >=3  && !win){
+    win=true;
+    game10WinTime = currentTime;
+    console.log("User wins game 8");
+    numWins++;
+    console.log("Game 8 win time is "+game8WinTime);
+  }else if (game11 && correct >=3  && !win){
+    win=true;
+    game11WinTime = currentTime;
+    console.log("User wins game 8");
+    numWins++;
+    console.log("Game 8 win time is "+game8WinTime);
+  }else if (game12 && correct >=3  && !win){
+    win=true;
+    game12WinTime = currentTime;
+    console.log("User wins game 8");
+    numWins++;
+    console.log("Game 8 win time is "+game8WinTime);
+  }else if (game13 && correct >=3  && !win){
+    win=true;
+    game13WinTime = currentTime;
+    console.log("User wins game 8");
+    numWins++;
+    console.log("Game 8 win time is "+game8WinTime);
+  }else if (game14 && correct >=3  && !win){
+    win=true;
+    game14WinTime = currentTime;
+    console.log("User wins game 8");
+    numWins++;
+    console.log("Game 8 win time is "+game8WinTime);
+  }else if (game15 && correct >=3  && !win){
+    win=true;
+    game15WinTime = currentTime;
+    console.log("User wins game 8");
+    numWins++;
+    console.log("Game 8 win time is "+game8WinTime);
+  }else if (game16 && correct >=3  && !win){
+    win=true;
+    game16WinTime = currentTime;
+    console.log("User wins game 8");
+    numWins++;
+    console.log("Game 8 win time is "+game8WinTime);
+  }else if (game17 && correct >=3  && !win){
+    win=true;
+    game17WinTime = currentTime;
+    console.log("User wins game 8");
+    numWins++;
+    console.log("Game 8 win time is "+game8WinTime);
+  }else if (game18 && correct >=3  && !win){
+    win=true;
+    game18WinTime = currentTime;
+    console.log("User wins game 8");
+    numWins++;
+    console.log("Game 8 win time is "+game8WinTime);
+  }else if (game19 && correct >=3  && !win){
+    win=true;
+    game19WinTime = currentTime;
+    console.log("User wins game 8");
+    numWins++;
+    console.log("Game 8 win time is "+game8WinTime);
+  }else if (game20 && correct >=3  && !win){
+    win=true;
+    game20WinTime = currentTime;
+    console.log("User wins game 8");
+    numWins++;
+    console.log("Game 8 win time is "+game8WinTime);
+  }else if (game21 && correct >=3  && !win){
+    win=true;
+    game21WinTime = currentTime;
+    console.log("User wins game 8");
+    numWins++;
+    console.log("Game 8 win time is "+game8WinTime);
+  }else if (game22 && correct >=3  && !win){
+    win=true;
+    game22WinTime = currentTime;
+    console.log("User wins game 8");
+    numWins++;
+    console.log("Game 8 win time is "+game8WinTime);
+  }else if (game23 && correct >=3  && !win){
+    win=true;
+    game23WinTime = currentTime;
+    console.log("User wins game 8");
+    numWins++;
+    console.log("Game 8 win time is "+game8WinTime);
+  }else if (game24 && correct >=3  && !win){
+    win=true;
+    game24WinTime = currentTime;
+    console.log("User wins game 8");
+    numWins++;
+    console.log("Game 8 win time is "+game8WinTime);
   }
-
-  
-  
-  
   
   
   //----------------WIN LOGIC----------------
@@ -478,6 +724,102 @@ function draw() {
     else if (game8 && currentTime-game8WinTime==2){
       game8 = false;
       win = false;
+      game9StartTime = currentTime;
+      game9 = true;
+    }
+    else if (game9 && currentTime-game9WinTime==2){
+      game9 = false;
+      win = false;
+      game10StartTime = currentTime;
+      game10 = true;
+    }
+    else if (game10 && currentTime-game10WinTime==2){
+      game10 = false;
+      win = false;
+      game11StartTime = currentTime;
+      game11 = true;
+    }
+    else if (game11 && currentTime-game11WinTime==2){
+      game11 = false;
+      win = false;
+      game12StartTime = currentTime;
+      game12 = true;
+    }
+    else if (game12 && currentTime-game12WinTime==2){
+      game12 = false;
+      win = false;
+      game13StartTime = currentTime;
+      game13 = true;
+    }
+    else if (game13 && currentTime-game13WinTime==2){
+      game13 = false;
+      win = false;
+      game14StartTime = currentTime;
+      game14 = true;
+    }
+    else if (game14 && currentTime-game14WinTime==2){
+      game14 = false;
+      win = false;
+      game15StartTime = currentTime;
+      game15 = true;
+    }
+    else if (game15 && currentTime-game15WinTime==2){
+      game15 = false;
+      win = false;
+      game16StartTime = currentTime;
+      game16 = true;
+    }
+    else if (game16 && currentTime-game16WinTime==2){
+      game16 = false;
+      win = false;
+      game17StartTime = currentTime;
+      game17 = true;
+    }
+    else if (game17 && currentTime-game17WinTime==2){
+      game17 = false;
+      win = false;
+      game18StartTime = currentTime;
+      game18 = true;
+    }
+    else if (game18 && currentTime-game18WinTime==2){
+      game18 = false;
+      win = false;
+      game19StartTime = currentTime;
+      game19 = true;
+    }
+    else if (game19 && currentTime-game19WinTime==2){
+      game19 = false;
+      win = false;
+      game20StartTime = currentTime;
+      game20 = true;
+    }
+    else if (game20 && currentTime-game20WinTime==2){
+      game20 = false;
+      win = false;
+      game21StartTime = currentTime;
+      game21 = true;
+    }
+    else if (game21 && currentTime-game21WinTime==2){
+      game21 = false;
+      win = false;
+      game22StartTime = currentTime;
+      game22 = true;
+    }
+    else if (game22 && currentTime-game22WinTime==2){
+      game22 = false;
+      win = false;
+      game23StartTime = currentTime;
+      game23 = true;
+    }
+    else if (game23 && currentTime-game23WinTime==2){
+      game23 = false;
+      win = false;
+      game24StartTime = currentTime;
+      game24 = true;
+    }
+    else if (game24 && currentTime-game24WinTime==2){
+      game24 = false;
+      win = false;
       done = true;
     }
     }
@@ -487,7 +829,7 @@ function draw() {
   //----------------TIME ELAPSE CODE----------------
   //display times up, and move on to the next game
   //Times up for game1
-  if(startCountDown >= 5 && game1){
+  if(startCountDown >= 2 && game1){
     fill(0);
     textSize(30);
     translate(width, 0); // Translate to the right edge of the canvas
@@ -504,7 +846,7 @@ function draw() {
     // }
      } 
     //Times up for game2
-  else if(startCountDown >= 5 && game2){
+  else if(startCountDown >= 2 && game2){
     fill(0);
     textSize(30);
     translate(width, 0); // Translate to the right edge of the canvas
@@ -523,7 +865,7 @@ function draw() {
     // }
      } 
   //Times up for game3
-  else if (startCountDown >= 5 && game3){
+  else if (startCountDown >= 2 && game3){
     fill(0);
     textSize(30);
     translate(width, 0); // Translate to the right edge of the canvas
@@ -541,7 +883,7 @@ function draw() {
     }
   
   //Times up for game4
-  else if (startCountDown >= 5 && game4){
+  else if (startCountDown >= 2 && game4){
     fill(255);
     textSize(30);
     translate(width, 0); // Translate to the right edge of the canvas
@@ -559,7 +901,7 @@ function draw() {
   }
   
     //Times up for game5
-  else if (startCountDown >= 5 && game5){
+  else if (startCountDown >= 2 && game5){
     fill(0);
     textSize(30);
     translate(width, 0); // Translate to the right edge of the canvas
@@ -577,7 +919,7 @@ function draw() {
   }
   
    //Times up for game6
-  else if (startCountDown >= 5 && game6){
+  else if (startCountDown >= 2 && game6){
     fill(0);
     textSize(30);
     translate(width, 0); // Translate to the right edge of the canvas
@@ -595,7 +937,7 @@ function draw() {
   }
   
   //Times up for game7
-  else if (startCountDown >= 5 && game7){
+  else if (startCountDown >= 2 && game7){
     fill(0);
     textSize(30);
     translate(width, 0); // Translate to the right edge of the canvas
@@ -613,7 +955,7 @@ function draw() {
   }
   
    //Times up for game8
-  else if (startCountDown >= 5 && game8){
+  else if (startCountDown >= 2 && game8){
     fill(0);
     textSize(30);
     translate(width, 0); // Translate to the right edge of the canvas
@@ -626,11 +968,287 @@ function draw() {
     game8 = false;
       console.log("Game 8 is now" + game8);
     win = false;
-    done=true;
+    game9=true;
     // }
   }
   
+     //Times up for game8
+     else if (startCountDown >= 2 && game9){
+      fill(0);
+      textSize(30);
+      translate(width, 0); // Translate to the right edge of the canvas
+      scale(-1, 1); // Flip the canvas horizontally    
+      text("TIME'S UP!", 300, 230);
+      console.log("User loses game8");
+      game10StartTime = currentTime;
   
+      // if (game8 && startCountDown>=5){
+      game9 = false;
+        console.log("Game 8 is now" + game8);
+      win = false;
+      game10=true;
+      // }
+    }
+
+         //Times up for game8
+         else if (startCountDown >= 2 && game10){
+          fill(0);
+          textSize(30);
+          translate(width, 0); // Translate to the right edge of the canvas
+          scale(-1, 1); // Flip the canvas horizontally    
+          text("TIME'S UP!", 300, 230);
+          console.log("User loses game8");
+          game11StartTime = currentTime;
+      
+          // if (game8 && startCountDown>=5){
+          game10 = false;
+            console.log("Game 8 is now" + game8);
+          win = false;
+          game11=true;
+          // }
+        }
+     //Times up for game8
+     else if (startCountDown >= 2 && game11){
+      fill(0);
+      textSize(30);
+      translate(width, 0); // Translate to the right edge of the canvas
+      scale(-1, 1); // Flip the canvas horizontally    
+      text("TIME'S UP!", 300, 230);
+      console.log("User loses game8");
+      game12StartTime = currentTime;
+  
+      // if (game8 && startCountDown>=5){
+      game11 = false;
+        console.log("Game 8 is now" + game8);
+      win = false;
+      game12=true;
+      // }
+    }
+     //Times up for game8
+     else if (startCountDown >= 2 && game12){
+      fill(0);
+      textSize(30);
+      translate(width, 0); // Translate to the right edge of the canvas
+      scale(-1, 1); // Flip the canvas horizontally    
+      text("TIME'S UP!", 300, 230);
+      console.log("User loses game8");
+      game13StartTime = currentTime;
+  
+      // if (game8 && startCountDown>=5){
+      game12 = false;
+        console.log("Game 8 is now" + game8);
+      win = false;
+      game13=true;
+      // }
+    }
+         //Times up for game8
+         else if (startCountDown >= 2 && game13){
+          fill(0);
+          textSize(30);
+          translate(width, 0); // Translate to the right edge of the canvas
+          scale(-1, 1); // Flip the canvas horizontally    
+          text("TIME'S UP!", 300, 230);
+          console.log("User loses game8");
+          game14StartTime = currentTime;
+      
+          // if (game8 && startCountDown>=5){
+          game13 = false;
+            console.log("Game 8 is now" + game8);
+          win = false;
+          game14=true;
+          // }
+        }
+     //Times up for game8
+     else if (startCountDown >= 2 && game14){
+      fill(0);
+      textSize(30);
+      translate(width, 0); // Translate to the right edge of the canvas
+      scale(-1, 1); // Flip the canvas horizontally    
+      text("TIME'S UP!", 300, 230);
+      console.log("User loses game8");
+      game15StartTime = currentTime;
+  
+      // if (game8 && startCountDown>=5){
+      game14 = false;
+        console.log("Game 8 is now" + game8);
+      win = false;
+      game15=true;
+      // }
+    }
+
+     //Times up for game8
+     else if (startCountDown >= 2 && game15){
+      fill(0);
+      textSize(30);
+      translate(width, 0); // Translate to the right edge of the canvas
+      scale(-1, 1); // Flip the canvas horizontally    
+      text("TIME'S UP!", 300, 230);
+      console.log("User loses game8");
+      game16StartTime = currentTime;
+  
+      // if (game8 && startCountDown>=5){
+      game15 = false;
+        console.log("Game 8 is now" + game8);
+      win = false;
+      game16=true;
+      // }
+    }
+         //Times up for game8
+         else if (startCountDown >= 2 && game16){
+          fill(0);
+          textSize(30);
+          translate(width, 0); // Translate to the right edge of the canvas
+          scale(-1, 1); // Flip the canvas horizontally    
+          text("TIME'S UP!", 300, 230);
+          console.log("User loses game8");
+          game17StartTime = currentTime;
+      
+          // if (game8 && startCountDown>=5){
+          game16 = false;
+            console.log("Game 8 is now" + game8);
+          win = false;
+          game17=true;
+          // }
+        }
+     //Times up for game8
+     else if (startCountDown >= 2 && game17){
+      fill(0);
+      textSize(30);
+      translate(width, 0); // Translate to the right edge of the canvas
+      scale(-1, 1); // Flip the canvas horizontally    
+      text("TIME'S UP!", 300, 230);
+      console.log("User loses game8");
+      game18StartTime = currentTime;
+  
+      // if (game8 && startCountDown>=5){
+      game17 = false;
+        console.log("Game 8 is now" + game8);
+      win = false;
+      game18=true;
+      // }
+    }
+     //Times up for game8
+     else if (startCountDown >= 2 && game18){
+      fill(0);
+      textSize(30);
+      translate(width, 0); // Translate to the right edge of the canvas
+      scale(-1, 1); // Flip the canvas horizontally    
+      text("TIME'S UP!", 300, 230);
+      console.log("User loses game8");
+      game19StartTime = currentTime;
+  
+      // if (game8 && startCountDown>=5){
+      game18 = false;
+        console.log("Game 8 is now" + game8);
+      win = false;
+      game19=true;
+      // }
+    }
+     //Times up for game8
+     else if (startCountDown >= 2 && game19){
+      fill(0);
+      textSize(30);
+      translate(width, 0); // Translate to the right edge of the canvas
+      scale(-1, 1); // Flip the canvas horizontally    
+      text("TIME'S UP!", 300, 230);
+      console.log("User loses game8");
+      game20StartTime = currentTime;
+  
+      // if (game8 && startCountDown>=5){
+      game19 = false;
+        console.log("Game 8 is now" + game8);
+      win = false;
+      game20=true;
+      // }
+    }
+     //Times up for game8
+     else if (startCountDown >= 2 && game20){
+      fill(0);
+      textSize(30);
+      translate(width, 0); // Translate to the right edge of the canvas
+      scale(-1, 1); // Flip the canvas horizontally    
+      text("TIME'S UP!", 300, 230);
+      console.log("User loses game8");
+      game21StartTime = currentTime;
+  
+      // if (game8 && startCountDown>=5){
+      game20 = false;
+        console.log("Game 8 is now" + game8);
+      win = false;
+      game21=true;
+      // }
+    }
+     //Times up for game8
+     else if (startCountDown >= 2 && game21){
+      fill(0);
+      textSize(30);
+      translate(width, 0); // Translate to the right edge of the canvas
+      scale(-1, 1); // Flip the canvas horizontally    
+      text("TIME'S UP!", 300, 230);
+      console.log("User loses game8");
+      game22StartTime = currentTime;
+  
+      // if (game8 && startCountDown>=5){
+      game21 = false;
+        console.log("Game 8 is now" + game8);
+      win = false;
+      game22=true;
+      // }
+    }
+         //Times up for game8
+         else if (startCountDown >= 2 && game22){
+          fill(0);
+          textSize(30);
+          translate(width, 0); // Translate to the right edge of the canvas
+          scale(-1, 1); // Flip the canvas horizontally    
+          text("TIME'S UP!", 300, 230);
+          console.log("User loses game8");
+          game23StartTime = currentTime;
+      
+          // if (game8 && startCountDown>=5){
+          game22 = false;
+            console.log("Game 8 is now" + game8);
+          win = false;
+          game23=true;
+          // }
+        }
+       //Times up for game8
+       else if (startCountDown >= 2 && game23){
+        fill(0);
+        textSize(30);
+        translate(width, 0); // Translate to the right edge of the canvas
+        scale(-1, 1); // Flip the canvas horizontally    
+        text("TIME'S UP!", 300, 230);
+        console.log("User loses game8");
+        game24StartTime = currentTime;
+    
+        // if (game8 && startCountDown>=5){
+        game23 = false;
+          console.log("Game 8 is now" + game8);
+        win = false;
+        game24=true;
+        // }
+      }
+     //Times up for game8
+     else if (startCountDown >= 2 && game24){
+      fill(0);
+      textSize(30);
+      translate(width, 0); // Translate to the right edge of the canvas
+      scale(-1, 1); // Flip the canvas horizontally    
+      text("TIME'S UP!", 300, 230);
+      console.log("User loses game8");
+      //game10StartTime = currentTime;
+  
+      // if (game8 && startCountDown>=5){
+      game24 = false;
+        console.log("Game 8 is now" + game8);
+      win = false;
+      done=true;
+      // }
+    }
+
+
+
   //----------------BODY TRACKING----------------
   if (poses && poses.length > 0 && !done) {
       index1=0;
@@ -759,7 +1377,7 @@ function draw() {
     }
     
     //1 - pose1
-    else if (main_start && game1){
+    else if (main_start && game1 || main_start && game3 ||main_start && game5){
       index=0;
       correct = 0;
     for (let kp of poses[0].keypoints) {
@@ -828,7 +1446,7 @@ function draw() {
     }
     
     //2 - pose2
-    else if (main_start && game2){
+    else if (main_start && game2||main_start && game4||main_start && game6){
       index=0;
       correct = 0;
       console.log("Currently in game2 loop");
@@ -900,7 +1518,7 @@ function draw() {
     }
     
     //3 - pose3
-    else if(main_start && game3){
+    else if(main_start && game7 || main_start && game9 ||main_start && game11){
     index=0;
     correct = 0;
     for (let kp of poses[0].keypoints) {
@@ -975,7 +1593,7 @@ function draw() {
     }
     
     //4 - pose4
-    else if (main_start && game4){
+    else if (main_start && game8||main_start && game10||main_start && game12){
       index=0;
       console.log(poses);
      for (let kp of poses[0].keypoints) {
@@ -1053,7 +1671,7 @@ function draw() {
     }
     
      //5 - pose5
-    else if(main_start && game5){
+    else if(main_start && game13||main_start && game15||main_start && game17){
     index=0;
     correct = 0;
     for (let kp of poses[0].keypoints) {
@@ -1123,7 +1741,7 @@ function draw() {
     
     
      //6 - pose6
-    else if(main_start && game6){
+    else if(main_start && game14||main_start && game16||main_start && game18){
     index=0;
     correct = 0;
     for (let kp of poses[0].keypoints) {
@@ -1192,7 +1810,7 @@ function draw() {
     }
     
      //7 - Pose7
-    else if (main_start && game7){
+    else if (main_start && game19||main_start && game21||main_start && game23){
       index=0;
       correct = 0;
     for (let kp of poses[0].keypoints) {
@@ -1261,7 +1879,7 @@ function draw() {
     }
   
       //8 - Pose8
-    else if (main_start && game8){
+    else if (main_start && game20||main_start && game22||main_start && game24){
       index=0;
       correct = 0;
     for (let kp of poses[0].keypoints) {
