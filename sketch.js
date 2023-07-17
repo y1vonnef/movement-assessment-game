@@ -539,7 +539,23 @@ function draw() {
     console.log("User wins game 2");
     numWins++;
     console.log("Game 2 win time is "+game2WinTime);
-  } else if (game5 && correct >= 3  && !win){
+  }
+  else if (game3 && correct >= 3  && !win){
+    win=true;
+    game3WinTime = currentTime;
+    console.log("User wins game 2");
+    numWins++;
+    console.log("Game 2 win time is "+game2WinTime);
+  }
+  else if (game4 && correct >= 3  && !win){
+    win=true;
+    game4WinTime = currentTime;
+    console.log("User wins game 2");
+    numWins++;
+    console.log("Game 2 win time is "+game2WinTime);
+  }
+  
+  else if (game5 && correct >= 3  && !win){
     win=true;
     game5WinTime = currentTime;
     console.log("User wins game 5");
