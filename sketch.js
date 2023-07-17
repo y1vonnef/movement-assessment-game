@@ -1314,7 +1314,7 @@ function draw() {
        index1++;
     }
     
-    stroke("grey");
+    stroke(255,255,255,128);
     strokeWeight(2);
     line(rightwristx,rightwristy,rightelbowx,rightelbowy);
     line(leftwristx,leftwristy,leftelbowx,leftelbowy);
