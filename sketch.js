@@ -687,27 +687,27 @@ function draw() {
     scale(-1, 1); // Flip the canvas horizontally
     text("YOU GOT IT!", 300, 230);
 
-    if (game1 && currentTime-game1WinTime ==2){
+    if (game1 && currentTime-game1WinTime ==1){
         game1 = false;
         win = false;
         game2StartTime = currentTime;
         game2 = true;
         }
-     else if (game2 && currentTime-game2WinTime==2){
+     else if (game2 && currentTime-game2WinTime==1){
       game2 = false;
       win = false;
       game3StartTime = currentTime;
       game3 = true;
     } 
     //crab
-    else if (game3 && currentTime-game3WinTime==2){
+    else if (game3 && currentTime-game3WinTime==1){
       game3 = false;
       win = false;
       game4StartTime = currentTime;
       game4 = true;
     } 
     //when game4 win
-    else if (game4 && currentTime-game4WinTime==2){
+    else if (game4 && currentTime-game4WinTime==1){
       //image(img_1star,0,0);
       game4 = false;
       win = false;
@@ -716,124 +716,124 @@ function draw() {
       //done=true;
     }
     //when game5 win
-    else if (game5 && currentTime-game5WinTime==2){
+    else if (game5 && currentTime-game5WinTime==1){
       game5 = false;
       win = false;
       game6StartTime = currentTime;
       game6 = true;
     }
     //when game6 win
-    else if (game6 && currentTime-game6WinTime==2){
+    else if (game6 && currentTime-game6WinTime==1){
       game6 = false;
       win = false;
       game7StartTime = currentTime;
       game7 = true;
     }
     //when game7 win
-    else if (game7 && currentTime-game7WinTime==2){
+    else if (game7 && currentTime-game7WinTime==1){
       game7 = false;
       win = false;
       game8StartTime = currentTime;
       game8 = true;
     }
     //when game8 win
-    else if (game8 && currentTime-game8WinTime==2){
+    else if (game8 && currentTime-game8WinTime==1){
       game8 = false;
       win = false;
       game9StartTime = currentTime;
       game9 = true;
     }
-    else if (game9 && currentTime-game9WinTime==2){
+    else if (game9 && currentTime-game9WinTime==1){
       game9 = false;
       win = false;
       game10StartTime = currentTime;
       game10 = true;
     }
-    else if (game10 && currentTime-game10WinTime==2){
+    else if (game10 && currentTime-game10WinTime==1){
       game10 = false;
       win = false;
       game11StartTime = currentTime;
       game11 = true;
     }
-    else if (game11 && currentTime-game11WinTime==2){
+    else if (game11 && currentTime-game11WinTime==1){
       game11 = false;
       win = false;
       game12StartTime = currentTime;
       game12 = true;
     }
-    else if (game12 && currentTime-game12WinTime==2){
+    else if (game12 && currentTime-game12WinTime==1){
       game12 = false;
       win = false;
       game13StartTime = currentTime;
       game13 = true;
     }
-    else if (game13 && currentTime-game13WinTime==2){
+    else if (game13 && currentTime-game13WinTime==1){
       game13 = false;
       win = false;
       game14StartTime = currentTime;
       game14 = true;
     }
-    else if (game14 && currentTime-game14WinTime==2){
+    else if (game14 && currentTime-game14WinTime==1){
       game14 = false;
       win = false;
       game15StartTime = currentTime;
       game15 = true;
     }
-    else if (game15 && currentTime-game15WinTime==2){
+    else if (game15 && currentTime-game15WinTime==1){
       game15 = false;
       win = false;
       game16StartTime = currentTime;
       game16 = true;
     }
-    else if (game16 && currentTime-game16WinTime==2){
+    else if (game16 && currentTime-game16WinTime==1){
       game16 = false;
       win = false;
       game17StartTime = currentTime;
       game17 = true;
     }
-    else if (game17 && currentTime-game17WinTime==2){
+    else if (game17 && currentTime-game17WinTime==1){
       game17 = false;
       win = false;
       game18StartTime = currentTime;
       game18 = true;
     }
-    else if (game18 && currentTime-game18WinTime==2){
+    else if (game18 && currentTime-game18WinTime==1){
       game18 = false;
       win = false;
       game19StartTime = currentTime;
       game19 = true;
     }
-    else if (game19 && currentTime-game19WinTime==2){
+    else if (game19 && currentTime-game19WinTime==1){
       game19 = false;
       win = false;
       game20StartTime = currentTime;
       game20 = true;
     }
-    else if (game20 && currentTime-game20WinTime==2){
+    else if (game20 && currentTime-game20WinTime==1){
       game20 = false;
       win = false;
       game21StartTime = currentTime;
       game21 = true;
     }
-    else if (game21 && currentTime-game21WinTime==2){
+    else if (game21 && currentTime-game21WinTime==1){
       game21 = false;
       win = false;
       game22StartTime = currentTime;
       game22 = true;
     }
-    else if (game22 && currentTime-game22WinTime==2){
+    else if (game22 && currentTime-game22WinTime==1){
       game22 = false;
       win = false;
       game23StartTime = currentTime;
       game23 = true;
     }
-    else if (game23 && currentTime-game23WinTime==2){
+    else if (game23 && currentTime-game23WinTime==1){
       game23 = false;
       win = false;
       game24StartTime = currentTime;
       game24 = true;
     }
-    else if (game24 && currentTime-game24WinTime==2){
+    else if (game24 && currentTime-game24WinTime==1){
       game24 = false;
       win = false;
       done = true;
